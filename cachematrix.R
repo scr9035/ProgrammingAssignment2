@@ -44,9 +44,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 cacheSolve <- function(x, ...) {
-                                                 #Return a matrix that is the inverse of 'x'. If the matrix inversion
+                                                 #Return a matrix that is the inverse of 'x'. If the matrix inversion is
                                                  #in the cache it doesn't solve(matrix) it just grabs the solution from cache.
-                                                 #if not it solves the matrix, then stores it in cache.
+                                                 #if not it solves (inverts) the matrix, then stores it in cache.
         
                                                  #the list from makeCacheMatrix function is passed into it.
         solveM <- x$getMatInv()                  #makes variable solveM the function 'getMatInv()' from MakeCacheMatrix list 
